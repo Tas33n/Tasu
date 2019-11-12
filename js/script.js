@@ -57,14 +57,21 @@ $(function () {
 
     //banner js 
     $('#banner-part, #banner-slider').slick({
-        dots: 'true',
+        dots: true,
+        dotsClass: "banner_dots",
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
         speed: 1000,
+        prevArrow: '<i class="fas btn-left fa-angle-left"></i>',
+        nextArrow: '<i class="fas btn-right fa-angle-right"></i>',
+        
     });
+    
+    //wow js 
+    new WOW().init();
 
 });
 

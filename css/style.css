@@ -188,6 +188,60 @@ p{
      bottom: -25px;
 }
 
+.btn-left,
+.btn-right{
+    font-size: 30px;
+    background: transparent;
+    color: #fcdc00;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.btn-left,
+.btn-right:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.btn-right{
+    right: 30px;
+}
+.btn-left{
+    left: 30px;
+}
+.banner_dots{
+    font-size: 50px;
+    color: red;
+}
+.banner_dots{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+.banner_dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.banner_dots li button{
+    color: transparent;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #eee;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.banner_dots .slick-active button{
+    background: #fcdc00;
+    border: #fcdc00;
+}
+
 /* gallery part */
 #gallery-part{
     background: #f9f9ff;
@@ -579,7 +633,7 @@ p{
     height: 140px;
     resize: none;
 }
-.submit{
+.send-msg{
     margin-left: auto;
     margin-right: 40px;
     display: block;
