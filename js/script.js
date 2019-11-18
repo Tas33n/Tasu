@@ -72,6 +72,23 @@ $(function () {
     
     //wow js 
     new WOW().init();
+    
+    //loder
+    $(window).on('load', function(){
+       
+        $('.preloader').delay(500).fadeOut(1000);
+        
+    });
+    
+    //gallery part
+    $('.filter-container').filterizr();
+    
+    $(".g-list").on('click', function(){
+       
+        $(".g-list").removeClass('g-active');
+        $(this).addClass('g-active');
+        
+    });
 
 });
 
